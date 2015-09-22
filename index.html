@@ -1,0 +1,83 @@
+---
+year: 2016
+month: 1
+day: 4
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Pizza Week 2014</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="/css/bootstrap.css" rel="stylesheet">
+<link rel="stylesheet" href="/js/countdown/jquery.countdown.css">
+<link rel="stylesheet" href="/css/style.css">
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    <link href="/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="/bootstrap/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <script src="/js/countdown/jquery.countdown.js"></script>
+
+																	<script type="text/javascript">
+																	$(function () {
+																		var austDay = new Date();
+																		austDay = new Date({{page.year}}, {{page.month}} - 1, {{page.day}});
+																		$('#defaultCountdown').countdown({until: austDay});
+																		$('#year').text(austDay.getFullYear());
+																	});
+
+																	</script>
+
+  </head>
+
+  <body style="background:#5EA5A4">
+
+    <div class="row-fluid">
+
+      <div class="span11 text-center"><img src="pizza-week.png" /></div>
+
+    </div> <!-- /row -->
+
+    <div class="row-fluid">
+      <div class="offset3 span5 text-center"><div id="defaultCountdown"></div></div>
+    </div> <!-- /row -->
+		<hr />
+			<div class="video-container">
+			         <iframe src="http://www.youtube.com/embed/3JQvPeQbOQE?rel=0&autoplay=1" frameborder="0" width="560" height="315"></iframe>
+			</div>
+<hr />
+<div class="row">
+	<div class="offset2 span9">
+<h1>Here's the dealio</h1>
+<p style="color:#eee">Eat pizza every day. Get your friends together and make it a party. Can you dig it?</p>
+</div>
+</div>
+<hr />
+<!-- SnapWidget -->
+
+<div class="row">
+	<div class="offset2 span9">
+<h1 style="color:#fff">Instagram photos from #PizzaWeek</h1>
+		<!-- SnapWidget -->
+		<iframe src="http://snapwidget.com/in/?h=cGl6emF3ZWVrfGlufDEyNXw2fDN8fG5vfDV8bm9uZXxvblN0YXJ0fG5v&v=4114" title="Instagram Widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:780px; height:390px"></iframe>
+<p style="color:#fff">Tag your photos with #PizzaWeek and they'll show up here</p>
+</div>
+</div>
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+  </body>
+</html>

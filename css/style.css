@@ -1,0 +1,30 @@
+body {
+  padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+}
+#defaultCountdown { color:#fff; }
+.hasCountdown {
+	background:none;
+	border:none;
+}
+
+.video-container {
+    position: relative;
+		padding-left:20px;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+ 
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+	text-transform:uppercase;
+	color:#fff;
+}
