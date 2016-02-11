@@ -2,6 +2,12 @@
 year: 2017
 month: 1
 day: 8
+title: Pizza Week 2017
+url: https://pizzaweek.net
+socialmediashareimage: https://pizzaweek.net/pizza-week-fb-share.jpg
+sitename: "Pizza Week - Jan 8-15, 2017"
+description: "Pizza Week is an annual holiday where you eat pizza every day for a week. Second week January. Get your friends together."
+
 ---
 
 <!DOCTYPE html>
@@ -13,12 +19,17 @@ day: 8
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <meta property="og:title" content="Pizza Week 2017">
+    <meta property="og:title" content="{{page.title}}">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://pizzaweek.net">
-		<meta property="og:image" content="https://pizzaweek.net/pizza-week-2016-fb-share.jpg">
-		<meta property="og:site_name" content="Pizza Week - Jan 8-15, 2017">
-		<meta property="og:description" content="Pizza Week is an annual holiday where you eat pizza every day for a week. Second week January. Get your friends together.">
+		<meta property="og:url" content="{{page.url}}">
+		<meta property="og:image" content="{{page.socialmediashareimage}}">
+		<meta property="og:site_name" content="{{page.sitename}}">
+		<meta property="og:description" content="{{page.description}}">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{page.title}}">
+    <meta name="twitter:description" content="{{page.description}}">
+    <meta name="twitter:image" content="{{page.socialmediaimage}}">
 
     <!-- Le styles -->
     <link href="/css/bootstrap.css" rel="stylesheet">
